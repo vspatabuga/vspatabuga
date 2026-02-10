@@ -13,7 +13,7 @@
 A Computer Science graduate from **University of Muhammadiyah Malang** specializing in Cloud Infrastructure and Information Security. I am driven by creating digital solutions that generate significant social impact through effective services and AI-driven Good Governance.
 
 ### 🏴‍☠️ Current Operations: Black-Pearl Control Center
-I am currently leading the development of **Black-Pearl**, a high-performance TUI (Text User Interface) orchestrator built with **Go** and the **Bubble Tea** framework. This project serves as the primary control unit for node management within the **Patabuga Enterprises System (PES)** ecosystem.
+I am currently leading the development of **Black-Pearl**, a high-performance TUI (Text User Interface) orchestrator built with **Go** and the **Bubble Tea** framework. This project serves as the primary control unit for node management within the **VS Patabuga** ecosystem.
 
 * **Core Stack**: Go 1.24, PTY/VTE integration, and `vt10x` terminal emulation.
 * **Key Focus**: Zero Trust Architecture, secure command execution, and real-time telemetry.

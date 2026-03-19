@@ -17,4 +17,5 @@ I am a technical systems architect dedicated to designing and deploying sovereig
 
 ---
 
-> 🛠️ **Selected Works & Designs:** Explore detailed Experiment and Research in my [**Showcase Repository**](https://github.com/vspatabuga/vsp).
+## 🛠️ Selected Works & Designs
+Explore detailed Experiment and Research in my [**Showcase Repository**](https://github.com/vspatabuga/vspatabuga).

@@ -1,10 +1,10 @@
-# Systems & Infrastructure Architecture
+# 🏛️ Sovereign System & AI Governance Architecture
 
-> **Sovereign Systems | Zero-Trust Networking | AI Governance**
+### Core Specializations
+- **Sovereign Infrastructure:** Multi-cloud systems managed via IaC (Terraform) across distributed nodes.
+- **Zero-Trust Networking:** Identity-aware, perimeter-less access model via Cloudflare Access and secure tunnels.
+- **AI Governance:** Private agent orchestration and automated system auditing with strict context isolation.
 
-Architectural hub for a distributed, private infrastructure designed for data sovereignty and automated security.
-
----
 
 ## 📊 Infrastructure Focus
 
@@ -14,11 +14,3 @@ pie title Architectural Focus (2026)
     "🔐 Zero-Trust Security" : 30
     "🧠 AI Governance" : 35
 ```
-
-### Core Specializations
-- **Sovereign Infrastructure:** Multi-cloud systems managed via IaC (Terraform) across distributed nodes.
-- **Zero-Trust Networking:** Identity-aware, perimeter-less access model via Cloudflare Access and secure tunnels.
-- **AI Governance:** Private agent orchestration and automated system auditing with strict context isolation.
-
----
-*Verified by AI-Audit: March 2026.*

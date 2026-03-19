@@ -2,7 +2,7 @@
 
 I am a technical systems architect dedicated to designing and deploying sovereign, perimeter-less digital environments. My work focuses on bridging distributed infrastructure with robust zero-trust security models and private intelligence orchestration.
 
-## 📊 Architectural Matrix
+## Core Specializations
 
 | Capability | Specialization Focus | Tech Stack |
 | :--- | :--- | :--- |
@@ -11,5 +11,4 @@ I am a technical systems architect dedicated to designing and deploying sovereig
 | **AI Governance** | Private agent orchestration and automated system auditing with strict context isolation. | ![](https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white) ![](https://img.shields.io/badge/n8n-FF6D5A?style=flat&logo=n8n&logoColor=white) ![](https://img.shields.io/badge/DeepSeek-000000?style=flat&logo=deepseek&logoColor=white) ![](https://img.shields.io/badge/Qwen-623CE4?style=flat&logo=alibabacloud&logoColor=white) |
 
 ---
-
-> 🛠️ **Technical Showcase:** Explore detailed Prototypes and Research in my [**Showcase Repository**](https://github.com/vspatabuga/vspatabuga).
+🛠️ **Technical Showcase:** Explore detailed Prototypes and Research in my [**Showcase Repository**](https://github.com/vspatabuga/vspatabuga).

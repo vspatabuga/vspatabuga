@@ -63,6 +63,19 @@ flowchart TD
     class PHX governance;
 ```
 
+### 📋 Diagram Legend (Standard Architecture Mapping)
+| Symbol/Style | Description | Classification (ISO/C4) |
+| :--- | :--- | :--- |
+| **Double Circle (( ))** | External Actor (User, Admin, or External Trigger) | **Person** |
+| **Hexagon {{ }}** | Decision Engine / Logic Controller (OpenClaw) | **Component** |
+| **Cylinder [( )]** | Data Persistence Layer (Vector Database) | **Container (Store)** |
+| **Bold Line (==>)** | Primary Data Flow (Requests & Inference) | **Primary Relation** |
+| **Dashed Line (-.->)** | Secondary Flow (Audit, Traces, Eval Metadata) | **Dependency / Trace** |
+| **Blue Box** | Security & Access Management Layer | **Infrastructure** |
+| **Purple Box** | Core System Orchestration | **Logic Layer** |
+| **Green Box** | Local Intelligence & RAG System | **Intelligence Layer** |
+| **Orange Box** | System Compliance & Observability | **Governance Layer** |
+
 ---
 
 ## 🚀 Key Components & Logic
@@ -99,10 +112,11 @@ Handles the "External World" integration. It acts as the sensor and actuator, pu
 ---
 
 ## 🛠️ Tech Stack Employed
-- **Orchestration:** OpenClaw
-- **Automation:** n8n
-- **RAG Framework:** LlamaIndex
-- **Inference Engine:** Ollama (Local Models)
-- **Observability:** Arize Phoenix
-- **Infrastructure:** Docker, Terraform, Tailscale
-- **Security:** Vaultwarden (Secrets Management)
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Orchestration** | ![](https://img.shields.io/badge/OpenClaw-FF6D5A?style=flat&logo=openclaw&logoColor=white) ![](https://img.shields.io/badge/n8n-FF6D5A?style=flat&logo=n8n&logoColor=white) |
+| **Intelligence** | ![](https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white) ![](https://img.shields.io/badge/LlamaIndex-00A3E0?style=flat&logo=llamaindex&logoColor=white) |
+| **Governance** | ![](https://img.shields.io/badge/Arize%20Phoenix-8D71BC?style=flat&logo=phoenix&logoColor=white) |
+| **Infrastructure** | ![](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![](https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white) ![](https://img.shields.io/badge/Tailscale-4433FF?style=flat&logo=tailscale&logoColor=white) ![](https://img.shields.io/badge/WireGuard-881717?style=flat&logo=wireguard&logoColor=white) |
+| **Security** | ![](https://img.shields.io/badge/Vaultwarden-175DDC?style=flat&logo=vaultwarden&logoColor=white) ![](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white) |

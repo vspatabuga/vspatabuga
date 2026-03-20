@@ -10,32 +10,57 @@ The goal is to provide a "Private Intelligence Center" where data never leaves t
 ## 🏗️ System Architecture
 
 ```mermaid
-graph TD
-    subgraph "Secure Access Layer (Zero-Trust)"
-        User((User/Admin)) -->|Tailscale/Cloudflare| Gateway[Reverse Proxy / Ingress]
+flowchart TD
+    %% Global Styling
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px,color:#333,font-family:Inter,sans-serif;
+    classDef security fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef orchestrator fill:#ede7f6,stroke:#4527a0,stroke-width:2px;
+    classDef intelligence fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
+    classDef governance fill:#fff3e0,stroke:#e65100,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef infra fill:#eceff1,stroke:#455a64,stroke-width:1px;
+
+    %% Nodes & Structure
+    User((👤 User / Admin))
+    
+    subgraph PERIMETER [Zero-Trust Access Perimeter]
+        direction LR
+        TS[Tailscale Node] --- CF[Cloudflare Tunnel]
+        GW[Reverse Proxy / Ingress]
     end
 
-    subgraph "Orchestration & Automation Layer"
-        Gateway --> OpenClaw[OpenClaw Orchestrator]
-        n8n[n8n Automation] <-->|Webhooks/API| OpenClaw
+    subgraph CORE [Orchestration Layer]
+        OC{{OpenClaw Engine}}
+        N8N[n8n Automation]
     end
 
-    subgraph "Intelligence & Memory Layer"
-        OpenClaw -->|Query| LlamaIndex[LlamaIndex RAG Engine]
-        LlamaIndex -->|Fetch| VectorDB[(Private Vector Store)]
-        OpenClaw -->|Inference| Ollama[Ollama Local LLM]
+    subgraph BRAIN [Sovereign Intelligence]
+        direction TB
+        LI[LlamaIndex RAG] --- VDB[(Vector DB)]
+        OL[Ollama LLM]
     end
 
-    subgraph "Governance & Observability Layer"
-        OpenClaw -.->|Tracing/Logs| Phoenix[Arize Phoenix]
-        LlamaIndex -.->|Eval| Phoenix
-        Phoenix -->|Insights| User
+    subgraph AUDIT [Governance & Observability]
+        PHX[Arize Phoenix Dashboard]
     end
 
-    subgraph "Infrastructure"
-        Ollama --- GPU[GPU/NPU Resources]
-        OpenClaw --- Docker[Docker Engine]
-    end
+    %% Connections
+    User ==>|Secure Access| GW
+    GW ==> OC
+    OC <==>|Event Trigger| N8N
+    
+    OC ==>|Context Query| LI
+    OC ==>|Local Inference| OL
+    
+    %% Audit Trails (Dashed lines for clarity)
+    OC -.->|Trace Data| PHX
+    LI -.->|Eval Spans| PHX
+    OL -.->|Token Logs| PHX
+    
+    %% Assign Classes
+    class TS,CF,GW security;
+    class OC,N8N orchestrator;
+    class LI,VDB,OL intelligence;
+    class PHX governance;
 ```
 
 ---

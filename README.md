@@ -11,4 +11,8 @@ I am a technical systems architect dedicated to designing and deploying sovereig
 | **AI Governance** | Private agent orchestration and automated system auditing with strict context isolation. | ![](https://img.shields.io/badge/OpenClaw-FF6D5A?style=flat&logo=openclaw&logoColor=white) ![](https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white) ![](https://img.shields.io/badge/n8n-FF6D5A?style=flat&logo=n8n&logoColor=white) ![](https://img.shields.io/badge/LlamaIndex-00A3E0?style=flat&logo=llamaindex&logoColor=white) ![](https://img.shields.io/badge/Arize%20Phoenix-8D71BC?style=flat&logo=phoenix&logoColor=white) |
 
 ---
+## Compliance & Links
+- **License**: Proprietary (All Rights Reserved) © 2026 Virgiawan Sagarmata Patabuga.
+- **Security**: Report issues via GitHub Issue with label `security` or email `sc@vspatabuga.io`.
+- **Dependabot**: npm + GitHub Actions scanning activated.
 🛠️ **Technical Showcase:** Explore detailed Prototypes and Research in my [**Showcase Repository**](https://github.com/vspatabuga/vspatabuga).
